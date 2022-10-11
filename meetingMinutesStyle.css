@@ -1,0 +1,162 @@
+/* 
+    This is a cascading style sheets for Meeting Minutes to modify the style of the file index.html
+    Date: 10/10/2022
+    By Chenfei Yan
+*/
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: lavender;
+    }
+}
+
+/*
+* {
+    font-family: 'Indie Flower', cursive;
+}*/
+
+form {
+    background-color:#f5f5dc;
+    margin: 5ch 10ch 5ch 10ch;
+    border: 2px solid black;
+    border-radius: 1em;
+    border-top-right-radius: 10% 40% ;
+    padding: 10mm 10mm 10mm 10mm;
+}
+
+div.textCenter {
+    text-align: center;
+}
+
+h2, h3 {
+    text-decoration: underline purple 3px;
+    color:blueviolet;
+    text-align: left;
+}
+
+h3 + ul {
+    color: gray;
+}
+
+hr ~ form {
+    color: rgb(24, 8, 147);
+}
+
+#additionInfo {
+    color: deepskyblue;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+label[for=agreement] {
+    color: red;
+}
+
+.displayInlineBlock {
+    color:red;
+    display: inline-block;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.displayBlock {
+    color: peru;
+    display: block;
+}
+
+video {
+    position: sticky;
+    left: 12cm;
+}
+
+audio {
+    position: relative;
+    left: 16cm;
+}
+
+
+textarea {
+    width: 700px;
+    height: 200px;
+}
+
+button.submitButtom {
+    margin-left: 12cm;
+    margin-top: 10mm;
+    margin-bottom: 2mm;
+    margin-right: 0mm ;
+    width: 10vw;
+    height: 5vh;
+}
+
+button.submitButtom:hover {
+    color: red;
+}
+
+button.submitButtom:active {
+    box-shadow: 2px 2px 5px orchid;
+}
+
+.webNavigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: auto;
+    list-style: none;
+    margin: auto;
+    background: deepskyblue;
+}
+
+.webNavigation a:hover {
+    background: #1565C0;
+}
+
+
+.webNavigation a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 20px 20px 20px;
+    grid-template-areas: 'a b c'
+                         'd e f'
+                         'g . .';
+    gap: 10px;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+
+}
+
+.gridItema{grid-area: a;}
+
+.gridItemb {grid-area: b;}
+
+.gridItemc {grid-area: c;}
+
+.gridItemd {grid-area: d;}
+
+.gridIteme {grid-area: e;}
+
+.gridItemf {grid-area: f;}
+
+.gridItemg {grid-area: g;}
+
+
+
